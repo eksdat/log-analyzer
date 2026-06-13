@@ -35,9 +35,9 @@ Top 3 IPs:
 
 O programa é dividido em três etapas, cada uma numa função:
 
-- `ler_log` — abre o arquivo, recorta cada linha e extrai IP, status e hora, devolvendo uma lista de tuplas.
-- `contar` — percorre essa lista e monta três dicionários de contagem (por IP, por status e por hora).
-- `exibir_resumo` — calcula os totais, o horário de pico e o ranking, e imprime o relatório.
+- `ler_log`, abre o arquivo, recorta cada linha e extrai IP, status e hora, devolvendo uma lista de tuplas.
+- `contar`, percorre essa lista e monta três dicionários de contagem (por IP, por status e por hora).
+- `exibir_resumo`, calcula os totais, o horário de pico e o ranking, e imprime o relatório.
 
 ## Como rodar
 
@@ -45,7 +45,7 @@ O programa é dividido em três etapas, cada uma numa função:
 2. Coloque o arquivo de log (ex.: `access.log`) na mesma pasta do programa.
 3. Rode:
    ```bash
-   python analisador_log.py
+   python main.py
    ```
 
 O repositório inclui um `access.log` de exemplo para teste.
@@ -54,7 +54,7 @@ O repositório inclui um `access.log` de exemplo para teste.
 
 ```
 analisador-log/
-├── analisador_log.py   programa principal
+├── main.py   programa principal
 ├── access.log          log de exemplo para teste
 └── README.md
 ```
